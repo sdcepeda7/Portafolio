@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Santiago Cepeda 1152368" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portafolio Developer</title>
+</head>
+
+<body class="min-h-screen w-full bg-gradient-to-b from-black to-purple-900 text-white selection:bg-purple-500/80 selection:text-black/40">
+    <!--  <header class="sticky top-0 z-50 flex justify-start items-center p-6 bg-gradient-to-b from-yellow-800/10 to-black/10 shadow-md text-white"> -->
+    <header class=" flex justify-start items-center p-6 bg-gradient-to-b from-yellow-800/10 to-black/10 shadow-md shadow-purple-900/30 text-white">
+        <div>
+            <h1 class="text-2xl font-bold">Santiago Cepeda</h1>
+            <p class="text-gray-500">Desarrollador Web Full Stack</p>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/dspk9awcp/image/upload/310990660_5544089088971112_5945166703607139268_n_ype9a4" alt="Foto de Santiago Cepeda" class="w-24 h-24 rounded-full object-cover ml-5" />
+        </div>
+    </header>
+
+    <!-- Contenido / portafolio :)-->
+
+    <main class="max-w-6xl  mx-auto px-6 py-10">
+
+        <h2 class="text-2xl font-semibold mb-6">Proyectos</h2>
+
+        <!-- Fila 1: justify-start / justify-center -->
+        <!-- flex-1 ocupa todo lo disponible -->
+
+        <div class="flex flex-wrap gap-4 mb-8">
+            <article class="flex-1 min-w-[280px] bg-gradient-to-b from-black/10 to-white/10 border border-white/10 p-4 rounded-xl shadow-md flex items-center justify-start hover:shadow-white/20">
+                <span class="text-3xl mr-3">🧾</span>
+                <div class="text-left">
+                    <h3 class="font-bold">FactuFast — SaaS de Facturación</h3>
+                    <p class="text-sm text-gray-200">Plataforma multi-tenant con Stripe, Next.js y PostgreSQL. Panel con KPIs y exportación CSV.</p>
+                    <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
+                </div>
+            </article>
+
+            <article class="flex-1 min-w-[280px] bg-gradient-to-b from-black/10 to-white/10 border border-white/10 p-4 rounded-xl shadow-md flex items-center justify-center hover:shadow-white/20">
+                <span class="text-3xl mr-3">🛒</span>
+                <div class="text-center">
+                    <h3 class="font-bold">MercApp — E-commerce Headless</h3>
+                    <p class="text-sm text-gray-200">Storefront en Next.js (App Router), CMS con Sanity y pagos PayPal/Stripe.
+                    </p>
+                    <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
+                </div>
+            </article>
+        </div>
+
+        <!-- Fila 2: justify-end / justify-between -->
+        <div class="flex flex-wrap gap-4 mb-8">
+            <article class="flex-1 min-w-[280px] bg-gradient-to-b from-black/10 to-white/10 border border-white/10 p-4 rounded-xl shadow-md flex items-center justify-end shadow-md hover:shadow-white/20">
+                <div class="text-right">
+                    <h3 class="font-bold">FinPulse — App Fintech</h3>
+                    <p class="text-sm text-gray-200">Análisis de gastos con Plaid API y categorización por IA (serverless functions).</p>
+                    <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
+                </div>
+                <span class="text-3xl ml-3">💳</span>
+            </article>
+
+            <article class="flex-1 min-w-[280px] bg-gradient-to-b from-black/10 to-white/10 border border-white/10 p-4 rounded-xl shadow-md flex justify-between items-center hover:shadow-white/20">
+                <span class="text-3xl">📈</span>
+                <div class="text-center flex-1">
+                    <h3 class="font-bold">DashX — Dashboard Analytics</h3>
+                    <p class="text-sm text-gray-200 px-2">Gráficos con Chart.js, roles RBAC y auditoría en Prisma.</p>
+                    <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
+                </div>
+                <span class="text-3xl">🧠</span>
+            </article>
+        </div>
+
+        <!-- Fila 3: justify-around (cards en columna) -->
+        <div class="flex justify-around gap-4 flex-wrap mb-8">
+            <article class=" bg-gradient-to-b from-black/10 to-white/10 border border-white/10 p-4 rounded-xl shadow-md flex items-center flex-col w-[280px] text-center hover:shadow-white/20 ">
+                <span class="text-3xl">🛰️</span>
+                <h3 class="font-bold mt-1">SatMap — Mapas y Geocoding</h3>
+                <p class="text-sm text-gray-200">Mapbox GL, rutas y clústeres; cache con Redis y SSR.</p>
+                <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
+            </article>
+
+            <article class=" bg-gradient-to-b from-black/10 to-white/10 border border-white/10 p-4 rounded-xl shadow-md flex items-center flex-col w-[280px] text-center hover:shadow-white/20 ">
+                <span class="text-3xl">🎬</span>
+                <h3 class="font-bold mt-1">ReelRate — Catálogo de Pelis</h3>
+                <p class="text-sm text-gray-200">TMDB API, login OAuth y listas colaborativas en tiempo real.</p>
+                <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
+            </article>
+        </div>
+
+        <!-- Fila 4: justify-evenly e imagenes  -->
+        <div class="flex flex-wrap justify-evenly gap-6 mb-8">
+            <article class="w-[300px] bg-gradient-to-b from-black/10 to-white/10 border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-white/20 ">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Equipo de desarrollo" class="h-40 w-full object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold">EduTrack — LMS Modular</h3>
+                    <p class="text-sm text-gray-200">Cursos, quizzes y certificados. Multicampus y pagos Mercado Pago.
+                    </p>
+                    <div class="mt-3 flex flex-wrap gap-2 text-xs text-purple-200/80">
+                        <span class="px-2 py-0.5 rounded bg-white/10">Next.js</span>
+                        <span class="px-2 py-0.5 rounded bg-white/10">PostgreSQL</span>
+                        <span class="px-2 py-0.5 rounded bg-white/10">Tailwind</span>
+                    </div>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 mx-auto block">Ver más</button>
+                </div>
+            </article>
+
+            <article class="w-[300px] bg-gradient-to-b from-black/10 to-white/10 border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-white/20">
+                <img src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=1200&auto=format&fit=crop" alt="Panel de analítica" class="h-40 w-full object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="font-bold">HealthSync — Turnos y Historias</h3>
+                    <p class="text-sm text-gray-200">Agenda médica, recordatorios por WhatsApp y firma digital.</p>
+                    <div class="mt-3 flex justify-center flex-wrap gap-2 text-xs text-purple-200/80 ">
+                        <span class="px-2 py-0.5 rounded bg-white/10">NestJS</span>
+                        <span class="px-2 py-0.5 rounded bg-white/10">Prisma</span>
+                        <span class="px-2 py-0.5 rounded bg-white/10">Twilio</span>
+                    </div>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
+                </div>
+            </article>
+
+            <article class="w-[300px] bg-gradient-to-b from-black/10 to-white/10 border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-white/20">
+                <img src="https://jhasenstudio.com/wp-content/uploads/2024/10/desarrollo-web-scaled.jpg" alt="Código en editor" class="h-40 w-full object-cover">
+                <div class="p-4 text-right">
+                    <h3 class="font-bold">GreenFleet — IoT y Logística</h3>
+                    <p class="text-sm text-gray-200">Telemetría de flotas, alertas y optimización de rutas con IA.</p>
+                    <div class="mt-3 flex justify-end flex-wrap gap-2 text-xs text-purple-200/80">
+                        <span class="px-2 py-0.5 rounded bg-white/10">MQTT</span>
+                        <span class="px-2 py-0.5 rounded bg-white/10">Python</span>
+                        <span class="px-2 py-0.5 rounded bg-white/10">GCP</span>
+                    </div>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 mx-auto block">Ver más</button>
+                </div>
+            </article>
+        </div>
+
+    </main>
+
+    <!-- Footer :)-->
+    <footer class="flex justify-start items-center p-6 bg-black bg-opacity-60 shadow-md text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h3 class="text-lg font-semibold mb-2 ">Contacto</h3>
+            <div class="flex flex-col items-center space-y-1 text-sm text-gray-300">
+                📧 Email:
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=santiagodanilocg@ufps.edu" target="_blank" class="text-blue-400 hover:underline">
+                    santiagodanilocg@ufps.edu.co </a>
+                <p>📍 Ubicación: Cúcuta, Colombia</p>
+                <p> 👨🏻‍🎓🏛️🏫 UFPS Ing Sistemas 💻🔧💪🏻</p>
+            </div>
+            <div class="mt-5 flex justify-center gap-4">
+                <a href="https://www.linkedin.com/in/santiago-danilo-cepeda-galeano-15511a293" class="bg-blue-500 hover:bg-blue-800 px-4 py-2 rounded">LinkedIn</a>
+                <a href="https://github.com/sdcepeda7" class="bg-gray-800/90 hover:bg-orange-600 px-4 py-2 rounded">GitHub</a>
+                <a href="https://www.instagram.com/sdcepeda7" class="bg-gradient-to-tr from-yellow-800 to-purple-800 hover:from-blue-600 hover:to-red-600 px-4 py-2 rounded">Instagram</a>
+            </div>
+            <p class="mt-6 text-xs text-white">© <span id="year"></span> Santiago Cepeda. Todos los derechos reservados.
+            </p>
+        </div>
+        <!-- <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script> -->
+    </footer>
+</body>
+
+</html>
